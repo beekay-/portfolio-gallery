@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-CA" lang="en-CA">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>PORTFOLIO NAME | Tagline</title>
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+<link rel="apple-touch-icon-precomposed" href="INSERT YOUR PNG" />
+<meta name="keywords" content="INSERT YOUR META TAGS" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<!-- jQuery Library -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<!-- Typekit -->
+<script type="text/javascript" src="//use.typekit.net/hvs8teu.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<!-- fancyBox -->
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+<!-- Initiate fancyBox, Image Captions, and Scroll to Top -->
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".fancybox").fancybox();
+});
+
+$(document).ready(function() {
+	$(".fancybox-button").fancybox({
+		prevEffect		: 'fade',
+		nextEffect		: 'fade',
+		closeBtn		: false,
+		nextSpeed		: 'fast',
+		prevSpeed		: 'fast',
+		helpers		: { 
+			title	: { type : 'outside' },
+			buttons	: {}
+		}
+	});
+});
+
+$(document).ready(function(){
+	$(".work").each(function () {
+		var $this = $(this);
+		var title = $this.attr("alt");
+		$this.after('<div class="caption">'+ title +'</div>');
+	});
+		$('.caption').hide();
+		$('.work').hover(function () {
+		$('.caption', this).slideDown('fast');
+				},
+		function () {
+				$('.caption', this).slideUp('fast');
+		});
+});
+		function scrollToTop() {
+			$('html, body').animate({scrollTop:0}, 'slow');
+		}
+</script>
+</head>
+
+<!-- The future belongs to those who prepare for it today — Malcom X -->
+
+<body>
+<!-- Logo & Nav -->
+	<header>
+		<div class="container">
+			<div id="logo"><a style="border: none;" href="..."><img src="..." width="393" height="30" alt="..." /></a></div>
+			<nav>
+				<ul>
+					<li class="colophon"><a class="colophon" href="..."></a></li>
+					<li class="xeenotes"><a class="xeenotes" href="..."></a></li>
+					<li class="portfolio"><a class="portfolio" href="..."></a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+<!-- Tagline -->
+	<div id="intro">
+		<div id="tagline">I make things look good. Like, <span class="highlight">really</span> good. <br />
+		Check out my recent work below.</div>
+	</div>
+ <!-- Gallery --> 
+	<div id="wrapper">
+	    <div class="top">
+	    	<div class="work">
+	  			<a class="fancybox" href="..."><img src="..." alt="..." /></a>
+	  				<div class="caption">
+	  					<h2><a class="title fancybox" href="...">TITLE</a></h2>
+	  				</div>
+	  		</div>
+		</div>
+	
+		<div class="middle">
+	    	<div class="work">
+	  			<a class="fancybox" href="..."><img src="..." alt="..." /></a>
+	  				<div class="caption">
+	  					<h2><a class="title fancybox" href="...">TITLE</a></h2>
+	  				</div>
+	  		</div>
+		</div>
+	
+	    <div class="top">
+	    	<div class="work">
+	  			<a class="fancybox" href="..."><img src="..." alt="..." /></a>
+	  				<div class="caption">
+	  					<h2><a class="title fancybox" href="...">TITLE</a></h2>
+	  				</div>
+	  		</div>
+		</div>
+	
+	    <div class="top">
+	    	<div class="work">
+	  			<a class="fancybox" href="..."><img src="..." alt="..." /></a>
+	  				<div class="caption">
+	  					<h2><a class="title fancybox" href="...">TITLE</a></h2>
+	  				</div>
+	  		</div>
+		</div>
+	
+	    <div class="middle">
+			<div class="work">
+	  			<a class="fancybox" href="..."><img src="..." alt="..." /></a>
+	  				<div class="caption">
+	  					<h2><a class="title fancybox" href="...">TITLE</a></h2>
+	  				</div>
+	  		</div>
+		</div>
+	
+	    <div class="middle">
+	    	<div class="work">
+	  			<a class="fancybox" href="..."><img src="..." alt="LOST" /></a>
+	  				<div class="caption">
+	  					<h2><a class="title fancybox" href="...">TITLE</a></h2>
+	  				</div>
+	  		</div>
+		</div>
+		
+	    <div class="middle">
+	    	<div class="work">
+	  			<a class="fancybox" href="..."><img src="..." alt="..." /></a>
+	  				<div class="caption">
+	  					<h2><a class="title fancybox" href="...">TITLE</a></h2>
+	  				</div>
+	  		</div>
+		</div>
+	
+	    <div class="middle">
+	    	<div class="work">
+	  			<a class="fancybox" href="..."><img src="..." alt="..." /></a>
+	  				<div class="caption">
+	  					<h2><a class="title fancybox" href="...">TITLE</a></h2>
+	  				</div>
+	  		</div>
+		</div>
+	
+	    <div class="middle">
+	    	<div class="work">
+	  			<a class="fancybox" href="..."><img src="..." alt="..." /></a>
+	  				<div class="caption">
+	  					<h2><a class="title fancybox" href="...">TITLE</a></h2>
+	  				</div>
+	  		</div>
+		</div>
+		
+	  <div class="middle">
+	    	<div class="work">
+	  			<a class="fancybox" href="..."><img src="..." alt="..." /></a>
+	  				<div class="caption">
+	  					<h2><a class="title fancybox" href="...">TITLE</a></h2>
+	  				</div>
+	  		</div>
+		</div>
+	
+	    <div class="middle">
+	    	<div class="work">
+	  			<a class="fancybox" href="..."><img src="..." alt="..." /></a>
+	  				<div class="caption">
+	  					<h2><a class="title fancybox" href="...">TITLE</a></h2>
+	  				</div>
+	  		</div>
+		</div>
+	
+	    <div class="middle">
+	    	<div class="work">
+	  			<a class="fancybox" href="..."><img src="..." alt="..." /></a>
+	  				<div class="caption">
+	  					<h2><a class="title fancybox" href="...">TITLE</a></h2>
+	  				</div>
+	  		</div>
+		</div>
+		
+	    <div class="middle">
+	    	<div class="work">
+	  			<a class="fancybox" href="..."><img src="..." alt="..." /></a>
+	  				<div class="caption">
+	  					<h2><a class="title fancybox" href="...">TITLE</a></h2>
+	  				</div>
+	  		</div>
+		</div>
+	
+	    <div class="middle">
+	    	<div class="work">
+	  			<a class="fancybox" href="..."><img src="..." alt="..." /></a>
+	  				<div class="caption">
+	  					<h2><a class="title fancybox" href="...">TITLE</a></h2>
+	  				</div>
+	  		</div>
+		</div>
+	
+	    <div class="middle">
+	    	<div class="work">
+	  			<a class="fancybox" href="..."><img src="..." alt="..." /></a>
+	  				<div class="caption">
+	  					<h2><a class="title fancybox" href="...">TITLE</a></h2>
+	  				</div>
+	  		</div>
+		</div>
+		
+	    <div class="middle">
+	    	<div class="work">
+	  			<a class="fancybox" href="..."><img src="..." alt="..." /></a>
+	  				<div class="caption">
+	  					<h2><a class="title fancybox" href="...">TITLE</a></h2>
+	  				</div>
+	  		</div>
+		</div>
+		
+	    <div class="middle">
+	    	<div class="work">
+	  			<a class="fancybox" href="..."><img src="..." alt="..." /></a>
+	  				<div class="caption">
+	  					<h2><a class="title fancybox" href="...">TITLE</a></h2>
+	  				</div>
+	  		</div>
+		</div>
+		
+	    <div class="middle">
+	    	<div class="work">
+	  			<a class="fancybox" href="..."><img src="..." alt="..." /></a>
+	  				<div class="caption">
+	  					<h2><a class="title fancybox" href="...">TITLE</a></h2>
+	  				</div>
+	  		</div>
+		</div>
+	
+	    <div class="middle">
+	    	<div class="work">
+	  			<a class="fancybox" href="..."><img src="..." alt="..." /></a>
+	  				<div class="caption">
+	  					<h2><a class="title fancybox" href="...">TITLE</a></h2>
+	  				</div>
+	  		</div>
+		</div>
+		
+	    <div class="middle">
+	    	<div class="work">
+	  			<a class="fancybox" href="..."><img src="..." alt="..." /></a>
+	  				<div class="caption">
+	  					<h2><a class="title fancybox" href="...">TITLE</a></h2>
+	  				</div>
+	  		</div>
+		</div>
+		
+	    <div class="middle">
+	    	<div class="work">
+	  			<a class="fancybox" href="..."><img src="..." alt="..." /></a>
+	  				<div class="caption">
+	  					<h2><a class="title fancybox" href="...">TITLE</a></h2>
+	  				</div>
+	  		</div>
+		</div>
+		
+	    <div class="middle">
+	    	<div class="work">
+	  			<a class="fancybox" href="..."><img src="..." alt="..." /></a>
+	  				<div class="caption">
+	  					<h2><a class="title fancybox" href="...">TITLE</a></h2>
+	  				</div>
+	  		</div>
+		</div>
+		
+	    <div class="middle">
+	    	<div class="work">
+	  			<a class="fancybox" href="..."><img src="..." alt="..." /></a>
+	  				<div class="caption">
+	  					<h2><a class="title fancybox" href="...">TITLE</a></h2>
+	  				</div>
+	  		</div>
+		</div>
+	
+	    <div class="middle">
+	    	<div class="work">
+	  			<a class="fancybox" href="..."><img src="..." alt="..." /></a>
+	  				<div class="caption">
+	  					<h2><a class="title fancybox" href="...">TITLE</a></h2>
+	  				</div>
+	  		</div>
+		</div>
+		
+	    <div class="bottom">
+	    	<div class="work">
+	  			<a class="fancybox" href="..."><img src="..." alt="..." /></a>
+	  				<div class="caption">
+	  					<h2><a class="title fancybox" href="...">TITLE</a></h2>
+	  				</div>
+	  		</div>
+		</div>
+		
+	    <div class="bottom">
+	    	<div class="work">
+	  			<a class="fancybox" href="..."><img src="..." alt="..." /></a>
+	  				<div class="caption">
+	  					<h2><a class="title fancybox" href="...">TITLE</a></h2>
+	  				</div>
+	  		</div>
+		</div>
+		
+	    <div class="bottom">
+	    	<div class="work">
+	  			<a class="fancybox" href="..."><img src="..." alt="..." /></a>
+	  				<div class="caption">
+	  					<h2><a class="title fancybox" href="...">TITLE</a></h2>
+	  				</div>
+	  		</div>
+		</div>
+	</div>
+<!-- Footer -->
+	<div id="footer">
+		<div class="container">
+			<div id="quote">
+				Imagination is more important than knowledge — Albert Einstein		
+			</div>
+			<div id="back-to-top">
+				<a class="arrow" href="javascript:scrollToTop();">▲ Back to Top</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
