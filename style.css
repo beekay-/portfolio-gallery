@@ -1,0 +1,349 @@
+/*****************************
+### Author: Bilal Karim    ###
+### URL: http://xeenat.com ###
+### Codename: RGB          ### 
+### Version: 1.6           ###  
+*****************************/
+
+/* MAIN */
+
+html {
+    background-color: #E3E3E3;
+    -webkit-font-smoothing: antialiased;
+}
+body {
+    font-family: 'Soleil', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    text-shadow: 0 1px 0 #FFF;
+    font-weight: 300;
+    color: #3F3F3F;
+    width: 100%;
+}
+header {
+    background: #141414;
+    min-width: 960px;
+    width: 100%;
+    height: 94px;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.container {
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#logo {
+    width: 435px;
+    height: 55px;
+    float: left;
+    margin: 35px 0 0 35px;
+}
+nav {
+    height: 55px;
+    width: 425px;
+    float: right;
+    margin: 30px 35px 0 0;
+}
+#intro {
+    display: table;
+    background: #960909;
+    min-width: 960px;
+    width: 100%;
+    height: 235px;
+    position: absolute;
+    left: 0;
+    margin-top: 86px;
+    border-top: 3px solid #540505;
+}
+#tagline {
+    display: table-cell;
+    vertical-align: middle;
+    letter-spacing: -3px;
+    text-shadow: 0 4px 4px #5E1111;
+    text-align: center;
+    font-size: 54px;
+    color: #FFF;
+    width: 960px;
+    height: 235px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.highlight {
+    font-weight: 700;
+    letter-spacing: -3px;
+}
+#wrapper {
+    left: 50%;
+    margin-left: -444px;
+    margin-top: 321px;
+    width: 888px;
+    position: absolute;
+    background-color: #E3E3E3;
+    z-index: -99;
+    -webkit-box-shadow: 0px 0px 10px 0px #777;
+    -moz-box-shadow: 0px 0px 10px 0px #777;
+    box-shadow: 0px 0px 10px 0px #777;
+}
+#footer {
+    background: #141414;
+    min-width: 960px;
+    width: 100%;
+    height: 30px;
+    margin-top: 2319px;
+    left: 0;
+    position: absolute;
+    border-top: 3px solid #540505;
+}
+#quote {
+    color: #FFF;
+    font-size: 11px;
+    font-weight: 600;
+    text-shadow: 0 2px 1px #000;
+    width: 435px;
+    margin: 8px 0 0 35px;
+    text-align: justify;
+    line-height: 150%;
+    float: left;
+}
+#back-to-top {
+    color: #FFF;
+    font-size: 11px;
+    font-weight: 600;
+    text-shadow: 0 2px 1px #000;
+    width: 411px;
+    margin: 8px 35px 0 0;
+    text-align: right;
+    line-height: 150%;
+    float: right;
+}
+a.arrow:link,
+a.arrow:visited {
+    font-weight: 600;
+    color: #FFF;
+    text-decoration: none;
+}
+a.arrow:hover { border-bottom: 1px #FFF solid }
+a.arrow:active { font-weight: 600 }
+img {
+    border: 0;
+    outline: none;
+}
+.work {
+    width: 296px;
+    height: 222px;
+    position: relative;
+}
+.top {
+    position: relative;
+    margin-top: 0px;
+    float: left;
+    width: 296px;
+    height: 222px;
+}
+.middle {
+    margin-top: 0px;
+    float: left;
+    width: 296px;
+    height: 222px;
+}
+.bottom {
+    float: left;
+    width: 296px;
+    height: 222px;
+}
+.top img,
+.middle img,
+.bottom img {
+    position: absolute;
+    width: 296px;
+    height: 222px;
+}
+.caption {
+    position: absolute;
+    bottom: 0px;
+    width: 276px;
+    display: none;
+    padding: 10px;
+    height: 27px;
+    background-color: #000;
+    color: #FFF;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+}
+
+/* LINKS AND HEADERS */
+
+h2 {
+    margin: 0;
+    font-family: 'Adelle', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    letter-spacing: -1px;
+}
+a:link {
+    font-size: 11px;
+    color: #1F1F1F;
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+    color: #DEDEDE;
+}
+a:hover { text-decoration: none }
+a:link { text-decoration: none }
+a.title:link {
+    color: #FFF;
+    font-size: 20px;
+    text-decoration: none;
+}
+a.title:visited { text-decoration: none }
+a.title:hover {
+    text-decoration: none;
+    border-left: 7px solid #00D79D;
+    padding-left: 10px;
+    -moz-transition: padding-left .3s;
+    -webkit-transition: padding-left .3s;
+    transition: padding-left .3s;
+}
+a.title:link { text-decoration: none }
+a.para:link {
+    font-size: 13px;
+    color: #666;
+    text-decoration: none;
+    border-bottom: 1px solid #666;
+}
+a.para:visited {
+    text-decoration: none;
+    color: #666;
+}
+a.para:hover {
+    text-decoration: none;
+    border-bottom: none;
+}
+a.para:link { text-decoration: none }
+p {
+    text-align: justify;
+    padding: 0 14px 14px 14px;
+}
+.portfolio {
+    background-image: url('img/gfx/portfolio.gif');
+    background-position: bottom;
+    width: 60px;
+    height: 17px;
+    transition: background-position .20s ease-in;
+    -moz-transition: background-position .20s ease-in;
+    -o-transition: background-position .20s ease-in;
+    -webkit-transition: background-position .20s ease-in;
+    -ms-transition: background-position .20s ease-in;
+    float: right;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 0 0 35px;
+    background-repeat: no-repeat;
+}
+.portfolio:hover {
+    background-position: top;
+    width: 60px;
+    height: 17px;
+    transition: background-position .20s ease-in;
+    -moz-transition: background-position .20s ease-in;
+    -o-transition: background-position .20s ease-in;
+    -webkit-transition: background-position .20s ease-in;
+    -ms-transition: background-position .20s ease-in;
+    float: right;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 0 0 35px;
+    background-repeat: no-repeat;
+}
+.xeenotes {
+    background-image: url('img/gfx/xeenotes.gif');
+    background-position: bottom;
+    width: 61px;
+    height: 17px;
+    transition: background-position .20s ease-in;
+    -moz-transition: background-position .20s ease-in;
+    -o-transition: background-position .20s ease-in;
+    -webkit-transition: background-position .20s ease-in;
+    -ms-transition: background-position .20s ease-in;
+    float: right;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 0 0 35px;
+    background-repeat: no-repeat;
+}
+.xeenotes:hover {
+    background-position: top;
+    width: 61px;
+    height: 17px;
+    transition: background-position .20s ease-in;
+    -moz-transition: background-position .20s ease-in;
+    -o-transition: background-position .20s ease-in;
+    -webkit-transition: background-position .20s ease-in;
+    -ms-transition: background-position .20s ease-in;
+    float: right;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 0 0 35px;
+    background-repeat: no-repeat;
+}
+.colophon {
+    background-image: url('img/gfx/colophon.gif');
+    background-position: bottom;
+    width: 63px;
+    height: 17px;
+    transition: background-position .20s ease-in;
+    -moz-transition: background-position .20s ease-in;
+    -o-transition: background-position .20s ease-in;
+    -webkit-transition: background-position .20s ease-in;
+    -ms-transition: background-position .20s ease-in;
+    float: right;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 0 0 35px;
+    background-repeat: no-repeat;
+}
+.colophon:hover {
+    background-position: top;
+    width: 63px;
+    height: 17px;
+    transition: background-position .20s ease-in;
+    -moz-transition: background-position .20s ease-in;
+    -o-transition: background-position .20s ease-in;
+    -webkit-transition: background-position .20s ease-in;
+    -ms-transition: background-position .20s ease-in;
+    float: right;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 0 0 35px;
+    background-repeat: no-repeat;
+}
+
+/* MISC */
+
+::selection {
+    background: #730707;
+    color: #FFF;
+    text-shadow: 0 -3px 1px #540505;
+}
+::-moz-selection {
+    background: #730707;
+    color: #FFF;
+    text-shadow: 0 -3px 1px #540505;
+}
+::-webkit-selection {
+    background: #730707;
+    color: #FFF;
+    text-shadow: 0 -3px 1px #540505;
+}
